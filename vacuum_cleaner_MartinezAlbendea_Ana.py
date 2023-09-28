@@ -18,9 +18,8 @@ def parse_laser_data(laser_data):
         laser += [(dist, angle)]
     return laser
     
-while True:
-
-		#States    
+while True:    
+    #States    
     if state == 0:
       
       HAL.setV(v)
