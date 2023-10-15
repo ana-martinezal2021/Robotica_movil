@@ -49,7 +49,7 @@ def image_processing(image):
   position_curve = pixel_count_curve//2
   if pixel_count_curve != 0:
       err_curve = 320 - white_pixels_curve[position_curve]
-      print(err_curve)
+      #print(err_curve)
 
   return err_straight, err_curve, output
   
@@ -64,7 +64,7 @@ def control_PID(err_straight, err_curve, pre_err):
   sum_error_straight += sum_error_straight * (d_time)
 
   if -15 < err_curve < 15:
-    print("recta")
+    #print("recta")
     v = 10
       
     kp_w = 0.009
@@ -72,7 +72,7 @@ def control_PID(err_straight, err_curve, pre_err):
     ki_w = 0.008
       
   else:
-    print("curva")
+    #print("curva")
     v = 5
       
     kp_w = 0.0088
