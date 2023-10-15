@@ -73,7 +73,7 @@ def control_PID(err_straight, err_curve, pre_err):
     print("curva")
     v = 6
       
-    kp_w = 0.0089
+    kp_w = 0.0088
     kd_w = 0.0035
     ki_w = 0.008
       
